@@ -1,0 +1,85 @@
+.a{
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+    padding-top: 10px;
+}
+.a_1{
+    height: 35%;
+    width: 15%;
+    border-radius: 10px;
+    margin: 60px;
+    margin-top: 20px;
+    float: left;
+    background-color: white;
+    position: relative;
+   left: 250px;
+}
+.a_2{
+    height: 35%;
+    width: 15%;
+    border-radius: 20px;
+    margin: 60px;
+    margin-top: 20px;
+    float: left;
+    background-color: white;
+    position: relative;
+   left: 250px;
+}
+.a_3{
+    height: 35%;
+    width: 15%;
+    border-radius: 20px;
+    margin: 60px;
+    margin-top: 20px;
+    float: left;
+    background-color: white;
+    position: relative;
+   top: 310px;
+   right: 90px;
+}
+.a_4{
+    height: 35%;
+    width: 15%;
+    border-radius: 20px;
+    margin: 60px;
+    margin-top: 20px;
+    float: left;
+    background-color: white;
+    position: relative;
+    left: 250px;
+    bottom: 20px;
+}
+.a_5{
+    height: 35%;
+    width: 15%;
+    border-radius: 20px;
+    margin: 60px;
+    margin-top: 20px;
+    float: left;
+    background-color: white;
+    position: relative;
+    left: 250px;
+    bottom: 20px;
+}
+img{
+    height: 110px;
+    width: 120px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border-radius: 100%;
+   
+}
+h3{
+    height: 10px;
+    color:blueviolet;
+}
+button{
+    height: 20px;
+    width: 50px;
+    background-color: purple;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    bottom: 10px;
+}

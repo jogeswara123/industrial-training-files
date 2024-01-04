@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.a{
+    width: 1100px;
+    height: 500px;
+    background-color: lightgray;
+    position: relative;
+    top: 100px;
+    left: 200px;
+
+}
+.a1{
+    width: 30%;
+    height: 70%;
+    float: left;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+   top: 80px;
+   left: 40px;
+}
+.a1_1{
+    width: 250px;
+    height: 70%;
+    border-bottom: 3px solid blue;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    left: 50px;
+}
+.a11_1{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+   
+}
+span{
+    font-size: 30px;
+    position: relative;
+    top: 50px;
+}
+.im{
+    height: 80px;
+    width: 80px;
+    position: relative;
+    bottom: 30px;
+}
+button{
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 10px;
+    left: 130px;
+    border-radius: 50px;
+}

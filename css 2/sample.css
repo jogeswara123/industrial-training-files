@@ -1,0 +1,120 @@
+.a{
+    border: 1px solid black;
+    height: 420px;
+    width: 80px;
+    background-color: bisque;
+    float: left;
+}
+.iv{
+    border: 1px solid black;
+    height: 500px;
+    width: 500px;
+    background-color: darkgreen;
+}
+div{
+    border: 1px solid black ;
+}
+.b{
+    width: 80px;
+    height: 80px;
+    float: inline-start;
+    background-color: aqua;
+}
+.c{
+    width: 335px;
+    height: 80px;
+    float: left;
+    background-color: brown;
+}
+.d{
+    width: 80px;
+    height: 80px;
+    float: right;
+}
+.e{
+    height: 40px;
+    background-color: blue;
+}
+.f{
+    height: 37px;
+    width: 40px;
+    background-color: blueviolet;
+    float: left;
+}
+.g{
+    height: 70%;
+    width: 80px;
+    background-color: cadetblue;
+}
+.h{
+    height: 30%;
+    width: 50%;
+    float: left;
+    background-color: yellow;
+}
+.i{
+    height: 80px;
+    width: 415px;
+    background-color: white;
+    float:right;
+}
+.j{
+    height: 37px;
+    width: 35px;
+    background-color: yellowgreen;
+    float: inline-end;
+}
+.k{
+    width: 80px;
+    height: 340px;
+    background-color: aquamarine;
+    float: left;
+}
+.l{
+    width: 40px;
+    height: 62%;
+    background-color: black;
+    float: left;
+}
+.m{
+width: 36px;
+height: 62%;
+background-color: bisque;
+float: right;
+}
+.n{
+    width: 80px;
+    height: 340px ;
+    background-color: blueviolet;
+    float: left;
+}
+.o{
+    width: 253px;
+    height:80px ;
+    background-color: crimson;
+    float: right;
+}
+.p{
+    width: 80px;
+    height: 80px;
+    background-color: azure;
+    float: left;
+}
+.q{
+    width: 80px;
+    height:255px;
+    background-color: chocolate;
+    float: left;
+}
+.r{
+    width: 90px;
+    height: 80px;
+    background-color: cyan;
+    float: right;
+}
+.s{
+    width: 43px;
+    height: 35%;
+    background-color: darkgoldenrod;
+    float: left;
+}

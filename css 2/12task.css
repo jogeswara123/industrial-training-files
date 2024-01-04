@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.a{
+    height: 100%;
+    width: 100%;
+    background-color: lightgray;
+    padding-top: 30px;
+}
+.b{
+    height: 150px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+   font-size: 30px;
+}
+.bl_1{
+    height: 30%;
+    width: 20%;
+    margin-left: 10%;
+    margin-top: 20px;
+    float: left;
+    border-radius:0px  0px 10px 10px;
+    background-color: white;
+    outline: 3px solid black;
+}
+.bl_1_1{
+    height: 30px;
+    background-color: rgb(225, 147, 160);
+}
+.bl_1_2{
+    height: 30px;
+    background-color:aqua;
+}
+.bl_1_3{
+    height: 30px;
+    background-color:lightgreen;
+}
+.bl_1_4{
+    height: 30px;
+    background-color:yellowgreen;
+}
+.bl_1_5{
+    height: 30px;
+    background-color:purple;
+}
+.bl_1_6{
+    height: 30px;
+    background-color:pink;
+}
+.but{
+    height: 50px;
+    width: 100px;
+    background-color: palevioletred;
+    color: white;
+    position: relative;
+    margin-left: 80px;
+    top: 80px;
+    bottom: 0px;
+    border-radius: 20px ;
+} 
+.bl_2{
+    height: 30px;
+    border: 2px solid black;
+}
+#i_1{
+    height: 40px;
+    width: 40px;
+   margin: 10px;
+}
+#i_2{
+    height: 40px;
+    width: 40px;
+   margin: 10px;
+}
+#i_3{
+    height: 50px;
+    width: 50px;
+   margin: 10px;
+}
+#i_4{
+    height: 40px;
+    width: 40px;
+   margin: 8px;
+}
+#i_5{
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
+#i_6{
+    height: 40px;
+    width: 40px;
+    margin: 8px;
+}
+.d{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: green;
+    margin: 10px;
+
+}
+.e{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: aqua;
+    margin: 10px;
+}
+.f{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: rgb(225, 147, 160) ;
+    margin: 10px;
+}
+.g{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: yellowgreen;
+    margin: 10px;
+}
+.h{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color:purple;
+    margin: 10px;
+
+}
+.j{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: palevioletred;
+    margin: 10px;
+
+}
+.last{
+    height: 100px;
+    outline: 3px solid black;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}

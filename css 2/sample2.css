@@ -1,0 +1,172 @@
+.a{
+    height: 500px;
+    width: 400px;
+    border: 3px solid black;
+    float: left;
+   
+}
+.aii{
+    
+        height: 500px;
+        width: 400px;
+        border: 3px solid black;
+        float: right;
+        position: relative;
+    
+}
+.b{
+    height: 400px;
+    width: 350px;
+    margin: 20px;
+    border: 2px solid black;
+}
+.c{
+    height: 130px;
+    width: 150px;
+    background-color: blue;
+    border: 2px solid black;
+}
+.d{
+    height: 130px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: green;
+}
+.e{
+    height: 500px;
+    width: 400px;
+    border: 3px solid black;
+    float: left;
+}
+.f{
+    height: 130px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: green;
+    position: relative;
+    left: 50px;
+    top: 20px;
+}
+.g{
+    height: 130px;
+    width: 150px;
+    background-color: blue;
+    border: 2px solid black;
+    position: relative;
+}
+.h{
+    height: 130px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: green;
+    position: absolute;
+    right: 0px;
+    
+}
+.k{
+height: 400px;
+    width: 350px;
+    margin: 20px;
+    border: 2px solid black;
+    position: relative;
+}
+.l{
+    height: 130px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: green;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+.lf{
+    height: 1020px;
+    width: 1625px;
+    outline: 3px solid black;
+    margin: 20px;
+    position:fixed ;
+}
+.m{
+    height: 130px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: green;
+    position: sticky;
+    top: 0px;
+}
+.n{
+    height: 400px;
+    width: 350px;
+    margin: 20px;
+    border: 2px solid black;
+    overflow-y: scroll;
+    position: relative;
+}
+.o{
+    height: 450px;
+    width: 150px;
+    background-color: blue;
+    border: 2px solid black;
+    
+}
+.p{
+    height: 130px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: green;
+    position: sticky;
+    bottom: 0px;
+}
+.q{
+    height: 400px;
+    width: 350px;
+    margin: 20px;
+    border: 2px solid black;
+    overflow-x: scroll;
+   
+}
+.r{
+    height: 150px;
+    width: 150px;
+   
+    background-color: green;
+    position: sticky;
+    left: 0px;
+}
+.s{
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    border: 2px solid black;
+   float: left;
+}
+.v{
+    height: 150px;
+    width: 300px;
+    background-color: blue;
+    border: 2px solid black;
+    float: left;
+}
+.g13{
+    height: 200px;
+    width: 500px;
+}
+.r1{
+    height: 150px;
+    width: 150px;
+   
+    background-color: green;
+    position: sticky;
+    right: 0px;
+    top:0px;
+}
+.q1{
+    height: 400px;
+    width: 350px;
+    margin: 20px;
+    border: 2px solid black;
+    overflow-x: scroll;
+   position:sticky;
+   right: 0px;
+   top: 0px;
+}
