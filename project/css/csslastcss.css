@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.a{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(226, 252, 243);
+}
+.b{
+    height: 100px;
+    background-color: blue;
+    text-align: center;
+    position: relative;
+}
+.b_1{
+    color: white;
+    position: relative;
+    top: 30px;
+}
+.c{
+    height: 250px;
+    width: 310px;
+    margin-top: 30px;
+    margin-left: 150px;
+    float: left;
+   
+}
+input{
+    height: 30px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom:20px ;
+}
+button{
+    height: 30px;
+    width: 300px;
+   background-color: blue;
+   text-align: center;
+   color: white;
+   margin-bottom: 30px;
+}
+.c_1{
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background-color:  rgb(226, 252, 243);
+    position: relative;
+    top: -10px;
+    left: 120px;
+}
+.c_2{
+    height: 30px;
+    text-align: center;
+    background-color: rgb(110, 108, 108);;
+    color: white;
+    padding-top: 10px;
+}
+.d{
+    height: 150px;
+    width: 900px;
+    background-color: blue;
+    float: left;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.d_1{
+    color: white;
+     margin:15px 0px 0px 20px;
+}
+.d_2{
+    height: 80px;
+    position: relative;
+  left: 750px;
+  top: -120px;
+}
+.d_3{
+    display: inline;
+    color: white;
+    position: relative;
+  left: 660px;
+  top: -100px;
+}
+.e{
+    height: 400px;
+    width: 900px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.e_1{
+    height: 250px;
+    width: 210px;
+    background-color: rgb(110, 108, 108);
+    color: white;
+    border-radius: 20px;
+    float: left;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.e_2{
+    height: 250px;
+    width: 210px;
+    background-color:  rgb(110, 108, 108);
+    color: white;
+    border-radius: 20px;
+    float: right;
+   margin-top: 50px;
+}
+img{
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.e_3{
+    margin-top: 20px;
+     margin-left: 20px;
+}
