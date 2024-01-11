@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* .a{
+            height: 200px;
+            width: 200px;
+            border-radius-left: 100%;
+            background-color: aqua;
+            animation-name: sample;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }*/
+        .b{
+            height: 100px;
+            width: 200px;
+            background-color: black;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            animation-name: test;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-direction: reverse;
+            animation-fill-mode: forwards;
+        }
+        @keyframes test{
+            0%{
+               background-color: aqua;
+            }
+            25%{
+                transform: translateY(200px);
+            }
+            50%{
+                transform: translateX(200px);
+            }
+            75%{
+                transform: translateY(-200px);
+            }
+            100%{
+                transform: translateX(-200px);
+            }
+        }
+        @keyframes sample{
+            from{
+                background-color: blue;
+            }
+            to{
+                background-image: url(../images/avatar.jpeg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="b"></div>
+</body>
+</html>

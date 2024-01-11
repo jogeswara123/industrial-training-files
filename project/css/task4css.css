@@ -1,0 +1,162 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.a{
+    height: 100%;
+    width: 100%;
+}
+.a_1{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.b{
+    height: 600px;
+    width: 45%;
+    margin-top: 30px;
+    margin-left: 50px;
+    float: left;
+}
+.b_1{
+    height: 500px;
+    width: 100%;
+    position: relative;
+    left: -20px;
+}
+.b_2{
+    margin-left: 70px;
+    position: relative;
+    top: -30px;
+}
+.b_3{
+    margin-left: 70px;
+     color: gray;
+     font-style: italic;
+     position: relative;
+     top: -30px;
+}
+.c_1{
+    height: 50px;
+    width: 280px;
+    padding-left: 50px;
+    float: left;
+    padding-top: 10px;
+    margin: 10px;
+    margin-right:50px ;
+    margin-top: 10px;
+}
+.c_1_1{
+    height: 20px;
+    position: relative;
+    top: -565px;
+    left: 800px;
+}
+.c_2{
+    height: 50px;
+    width: 620px;
+    padding-left: 60px;
+    float: left;
+    margin: 10px;
+    margin-top: 10px;
+}
+#c_3{
+    height: 50px;
+    width: 620px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    margin-top: 10px;
+}
+hr{
+    width: 620px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.c_4{
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    top: -10px;
+    left: 300px;
+}
+#c_4{
+    height: 50px;
+    width: 620px;
+    background-color: rgb(5, 5, 76);
+    color: white;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#c_5{
+    height: 50px;
+    width: 620px;
+    background-color: skyblue;
+    color: white;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.c_6{
+    height: 50px;
+    width: 520px;
+   padding-left: 20px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.c_7{
+    height: 50px;
+    width: 100px;
+    float: left;
+    text-align: right;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#i1{
+    position: relative;
+    left: -320px;
+    top: 60px;
+}
+#i2{
+    position: relative;
+    left: -670px;
+    top: 60px;
+}
+#i3{
+    position: relative;
+    left: -610px;
+    top: 25px;
+}
+#i4{
+    position: relative;
+    left: -640px;
+    top: 95px;
+}
+#i5{
+    position: relative;
+    left: -610px;
+    top: 150px;
+}
+#i6{
+    position: relative;
+    left: -630px;
+    top: 222px;
+}
+#i7{
+    position: relative;
+    left: -275px;
+    top: 205px;
+}
+@media screen  and (min-width:300px){
+    .a{
+        width: 100%;
+    }
+    
+}

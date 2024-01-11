@@ -152,3 +152,21 @@
 .n:hover{
     transform:matrix(2,10,30,3,30,40);
 }
+@media screen and (max-width:896px) and (min-width:826px){
+    .a,.b,.c,.d,.e,.f,.g,.j,.h,.i,.j,.k,.l,.m,.n{
+        width: 30%;
+    }
+    
+}
+@media screen and (max-width:825px) and (min-width:455px){
+    .a,.b,.c,.d,.e,.f,.g,.j,.h,.i,.j,.k,.l,.m,.n{
+        width: 45%;
+    }
+    
+}
+@media screen and (max-width:454px){
+    .a,.b,.c,.d,.e,.f,.g,.j,.h,.i,.j,.k,.l,.m,.n{
+        width: 100%;
+    }
+    
+}
