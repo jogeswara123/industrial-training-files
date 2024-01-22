@@ -1,0 +1,157 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(9, 8, 9);
+        }
+        section{
+            height:100vh;
+        }
+        h1{
+            position: absolute;
+            top:25%;
+            left: 20%;
+            color: beige;
+            font-size: 2cm;
+            letter-spacing: 2px;
+        }
+        .a{
+            position: absolute;
+            top:40%;
+            left: 33%;
+            color: beige;
+            font-size: 2cm;
+            letter-spacing: 2px;
+        }
+        span{
+            opacity: 0;
+            display: inline-block;
+          animation-name: animate;
+          animation-duration: 1s;
+          animation-delay: 7.5s;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards;
+        }
+        img{
+            height: 500px;
+            width: 500px;
+            opacity: 0;
+            position: absolute;
+            top: 20%;
+            left: 30%;
+            display: inline-block;
+          animation-name: ani;
+          animation-duration: 0.5s;
+          animation-delay: 13.7s;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards;
+        }
+        @keyframes animate {
+            0%{
+                opacity:0;
+                transform: rotateY(90deg);
+                filter: blur(8px);
+            }
+            100%{
+                opacity:1;
+                transform: rotateY(0deg);
+                filter: blur(0px);
+            }
+            
+        }
+        video{
+            height: 100%;
+            width: 100%;
+            text-decoration: black;
+            object-fit: cover;
+            background-color: black;
+        }
+          .b_1{
+            height: 100%;
+            width: 100%;
+            text-decoration: black;
+            object-fit: cover;
+            background-color: black;
+            
+        }
+        .b{
+            height: 100%;
+            width: 100%;
+            background-color: rgb(231, 18, 18);
+            animation-name: ani;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            animation-delay: 12s;
+            opacity: 0;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+        }
+        .c{
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            animation-name: ani;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            animation-delay: 14.3s;
+            opacity: 0;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+        }
+        @keyframes ani {
+            0%{
+                opacity: 0;
+                transform: rotateX(90deg);
+            }
+            100%{
+                opacity: 1;
+                transform: rotateX(0deg);
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <section>
+        <video src="../image/rose.webm" autoplay loop  muted></video>
+        <h1>
+            <span>H</span>
+            <span>A</span>
+            <span>P</span>
+            <span>P</span>
+            <span>P</span>
+            <span>Y</span>
+            <span>B</span>
+            <span>I</span>
+            <span>R</span>
+            <span>T</span>
+            <span>D</span>
+            <span>A</span>
+            <span>Y</span>
+        </h1>
+        <h1 class="a">
+            <span>P</span>
+            <span>R</span>
+            <span>A</span>
+            <span>S</span>
+            <span>A</span>
+            <span>N</span>
+            <span>t</span>
+            <span>h</span>
+        </h1>
+        <div class="b">
+            <video src="../image/flowers.mp4" class="b_1" autoplay loop muted></video>
+        <img src="../image/bir.jpg">
+        </div>
+        <div class="c">
+        </div>
+    </section>
+</body>
+</html>
