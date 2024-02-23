@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter the color:<input type="text" id="color" onkeypress="getcolour()">
+    <script>
+    function getcolour(){
+      var  getcolor=document.getElementById('color').value;
+        document.body.style.backgroundColor=getcolor;
+    }
+    
+    </script>
+</body>
+</html>

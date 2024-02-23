@@ -1,0 +1,28 @@
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    enter name:<input type="text" id="tet" onkeyup="gett(this.value)">
+    <p id="msg"></p>
+    <p id="msgd"></p>
+    <script>
+        function gett(value){
+        //     var le = document.getElementById('tet').value
+        //    var len=le.length
+            if(value.length<3)
+            {
+                  document.getElementById('msg').innerText="Please enter minimum 3 characters";
+                  document.getElementById('msg').style.color="red" 
+                  
+            }
+            else{
+                document.getElementById('msg').innerText="";
+            }
+            document.getElementById('msgd').innerText=value.length
+        }
+    </script>
+</body>
+</html>
