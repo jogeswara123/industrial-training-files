@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fun()">click</button>
+    
+    name:<input type="text" id="in"><br>
+    email:<input type="email" id="int"><br>
+    password:<input type="password" id="pass">
+    confirm:<input type="password" id="con"><br>
+    <p id="nn"></p>
+    check box<input type="checkbox" id="ins"><br>
+     radio <input type="radio" id="ine">
+    <button onclick="getname()">click</button>
+        <script>
+        // function fun(){
+        //     alert("you clicked the button");
+        // }
+        function getname(){
+            var name=document.getElementById('in').value
+            var e=document.getElementById("int").value
+            var p=document.getElementById('pass').value
+            var c=document.getElementById('ins').value
+           console.log(name)
+            if(name.length==0){
+              
+                alert("please enter detatails")
+            
+            }
+            else if (e.length==0) {
+                alert("please enter detatails")
+            } 
+            else if( p.length==0){
+                alert("please enter detatails")
+            }
+            else if(c.length==0){
+                alert("please enter detatails")
+            }
+            else {
+               if(p.length>8){
+
+               }
+            }
+        }
+    </script>
+   
+</body>
+</html>
