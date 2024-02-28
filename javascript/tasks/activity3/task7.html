@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    enter the number:<input type="number">
+    <button onclick="pal()">Palindrome</button>
+    <h3></h3>
+    <script>
+      function pal(){
+        var pall=document.querySelector('input').value;
+        var rev=0,b;
+        var temp=pall;
+       while( pall>0){
+        rev = rev * 10 + pall % 10;
+        pall = Math.floor(pall / 10);
+       }
+       if(rev==temp)
+       document.querySelector('h3').innerHTML="it is a palindrome"
+    else
+    document.querySelector('h3').innerHTML="it is not a palindrome"
+      }
+    </script>
+</body>
+</html>

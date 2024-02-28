@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    enter number:<input type="text">
+    <button onclick="fab()">fabnonic series</button>
+    <script>
+        
+        function fab(){
+            var a=document.querySelector('input').value;
+            var f1=0;
+            var f2=1;
+            var temp=[f1,f2];
+            while(f2<a){
+                var f3=f1+f2;
+                temp.push(f3);
+                f1=f2;
+                f2=f3;
+            }
+           var p=document.createElement('p');
+           p.innerHTML=temp;
+           document.body.appendChild(p);
+        }
+       
+    </script>
+</body>
+</html>

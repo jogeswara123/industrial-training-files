@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    enter a number:<input type="text" id="ii">
+    <button onclick="cli()">click</button>
+    <p id="demo"></p>
+        <script>
+           
+            function cli(){
+                var a =document.getElementById('ii').value;
+            for( var i=1;i<=10;i++){
+                var p=document.createElement('p');
+                p.innerHTML= a+"*"+i+"="+a*i;
+                document.body.appendChild(p);
+            }
+        }
+        </script>
+</body>
+</html>
