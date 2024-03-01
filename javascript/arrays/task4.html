@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+</head>
+<body>
+    <input type="text" id="id_input" placeholder="Enter a name" onkeypress="get(this.value)">
+    <button onclick="bu_fun()">Click</button>
+    <p id="p_id"></p>
+    <script>
+        function bu_fun(){
+            let var1=document.getElementById("id_input").value;
+            let names=['durgarao','nani','hari','varun']
+            let name_check=names.some(check)
+            function check(name,index,arr){
+                return name==var1;
+            }
+            console.log(name_check)
+            if(name_check==true)
+            {
+                    document.getElementById("p_id").innerHTML="You can proceed";
+                    document.getElementById("p_id").style.color="green";
+                }
+                else{
+                    document.getElementById("p_id").innerHTML="Not Registered";
+                    document.getElementById("p_id").style.color="red";
+            }
+        }
+    </script>
+</body>
+</html>

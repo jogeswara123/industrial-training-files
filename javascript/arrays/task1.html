@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+</head>
+<body>
+    <button onclick="aec()">Aec</button>
+    <button onclick="aces()">Aces</button>
+    <button onclick="acet()">Acet</button>
+    <script>
+        var data=[{
+            name:"durgarao",
+            college:"Aec"
+        },
+    {
+        name:"nani",
+        college:"Acet"
+    },
+    {
+        name:"varun",
+        college:'Aces'
+      },
+    {
+        name:"vinay",
+        college:"Aec"
+    }];
+    function aec(){
+  var c=data.filter((obj,index,arr)=>{
+     if(obj.college=="Aec"){
+    return obj;
+     }
+  })
+  for(var i=0;i<c.length;i++){
+    document.write("Record"+(i+1)+"<br>")
+    document.write(c[i].name+"<br>")
+    document.write(c[i].college+"<br>"+"<br>")
+  }
+}
+function aces(){
+    var c=data.filter((obj,index,arr)=>{
+     if(obj.college=="Aces"){
+    return obj;
+     }
+  })
+  for(var i=0;i<c.length;i++){
+    document.write("Record"+(i+1)+"<br>")
+    document.write(c[i].name+"<br>")
+    document.write(c[i].college+"<br>"+"<br>")
+  }
+}
+function acet(){
+    var c=data.filter((obj,index,arr)=>{
+     if(obj.college=="Acet"){
+    return obj;
+     }
+  })
+  for(var i=0;i<c.length;i++){
+    document.write("Record"+(i+1)+"<br>")
+    document.write(c[i].name+"<br>")
+    document.write(c[i].college+"<br>"+"<br>")
+  }
+}
+    </script>
+</body>
+</html>

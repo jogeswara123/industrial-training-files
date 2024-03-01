@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>some method</title>
+</head>
+<body>
+    <h1>some method</h1>
+    <script>
+        var email=['durga@gmail.com','nani@gmail.com','varun@gmail.com','hari@gmail.com'];
+        var a=email.some((e,index)=>{
+            return e==="nani@gmail.com";
+        });
+        console.log(a);
+        //anonymouns function
+        var b=email.some(function(e,index){
+            return e==="nani@gmailcom";
+        });
+        console.log(b);
+        //named function
+        email.some(fun);
+            function fun(e,index){
+           if(e=='hari@gmail.com'){
+            console.log(index);
+           }
+        } 
+    </script>
+</body>
+</html>

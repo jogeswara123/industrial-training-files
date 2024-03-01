@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=[2005,2004,2007,2001,2000,1978];
+        //arrow function
+        var ages= a.map((year,index,arr)=>{
+             let age=2024-year;
+             return "current age is:"+age;
+         });
+         console.log(a);
+         console.table(ages);
+         // anonymous function
+         a.map(function(year,index,arr){
+            console.log("current index is"+index);
+         });
+         // named function
+         a.map(fun);
+         function fun(year,index,arr){
+            console.log("current array is:"+arr);
+         }
+    </script>
+</body>
+</html>

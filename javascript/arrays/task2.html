@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+</head>
+<body>
+    <table id="myTable" border="2px solid">
+        <tr>
+              <th>Name</th>
+              <th>College</th>
+        </tr>
+      </table>
+    <script>
+         var arr=[{
+            name:"durgarao",
+            college:"Aec"
+        },
+    {
+        name:"nani",
+        college:"Acet"
+    },
+    {
+        name:"varun",
+        college:'Aces'
+      },
+    {
+        name:"vinay",
+        college:"Aec"
+    }];
+        var a=arr.filter((b,c)=>{
+            return b.college=='Aec'
+        })
+        var table = document.getElementById("myTable");
+        for (i=0;i<a.length;i++) {
+        var row = table.insertRow(i+1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        cell1.innerHTML = a[i].name;
+        cell2.innerHTML = a[i].college;
+        }
+    </script>
+</body>
+</html>

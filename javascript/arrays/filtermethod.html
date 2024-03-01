@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+</head>
+<body>
+    <script>
+        var a=[10,5,73,12,56,7];
+        //arrow function
+        var b = a.filter((a,b)=>{
+            return a%2==0;
+        })
+        console.log(b);
+        //anonymous function
+        var c = a.filter(function(a,b){
+            return a%2!=0;
+        })
+        console.log(c);
+        //named function
+        var d=a.filter(fun)
+        function fun(ele,index){
+            if(ele%2==0)
+            return ele;
+        }
+        console.log(d);
+    </script>
+</body>
+</html>

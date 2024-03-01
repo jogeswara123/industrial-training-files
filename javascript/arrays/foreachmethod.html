@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sal=[30000,20000,100000,50000];
+        console.log(sal);
+        //anonymons function
+        sal.forEach(function(am,index){
+            let increment;
+            increment=am/10;
+            console.log("increment of"+am+"is: "+increment);
+            sal[index]=am+increment;
+        })
+        console.log(sal);
+        // arrow function
+        sal.forEach((am,index)=>{
+            console.table("after increment salaries is :"+am);
+        })
+    </script>
+</body>
+</html>

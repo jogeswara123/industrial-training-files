@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>every method</title>
+</head>
+<body>
+    <h1>Every method</h1>
+    <script>
+        var marks=[100,50,35,40,87];
+        var a=marks.every((score)=>{
+            return score>20;
+        })
+        console.log(a);
+        var b=marks.every(function(score){
+            return score>35;
+        })
+        console.log(b);
+      var c=  marks.every(fun)
+           function fun (score){
+            if(score>20){
+                return score;
+            }
+        }
+        console.log(c);
+    </script>
+</body>
+</html>

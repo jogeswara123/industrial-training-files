@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        find method
+    </h1>
+    <script type="text/javascript">
+        var names=['sai','msd','ssrd','run']
+        var getname=names.find(function(names,index){
+            return names.startsWith('s')
+        })
+        console.log(getname);
+        var getnames=names.find((names,index)=>{
+            return names.endsWith('d')
+        })
+        console.log(getnames);
+        //named function
+        names.find(fun);
+        function fun(course,index){
+            if(course.startsWith('m')){
+                console.log(index);
+            }
+        }
+    </script>
+</body>
+</html>
