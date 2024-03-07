@@ -1,0 +1,26 @@
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h1>
+        find method
+        <input type="text">
+        <button onclick="funt()">click</button>
+        <p id="ssd"></p>
+        <script>
+              function funt(){
+            var names=['sai','msd','ssrd','run']
+            var var1=document.querySelector("input").value
+        var getnames=names.find((names,index)=>{
+            return names.startsWith(var1)
+        })
+        console.log(getnames);
+        document.getElementById('ssd').innerText=getnames;
+    }
+        </script>
+    </h1>
+ </body>
+ </html>

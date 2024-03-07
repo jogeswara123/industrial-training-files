@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        .a{
+            height: 205px;
+            width: 506px;
+            outline: 1px solid;
+            padding: 0.2%;
+        }
+        .a1{
+            height: 40px;
+            width: 390px;
+            outline: 1px solid;
+            margin: 0.1%;
+            float: left;
+            border-radius: 5px;
+        }
+        input{
+            height: 40px;
+            width: 390px;
+            outline: 1px solid;
+            margin: 0.1%;
+            float: left;
+            border-radius: 5px;
+        }
+        .a2{
+            height: 40px;
+            width: 110px;
+            margin-right: 0.2%;
+            outline: 1px solid;
+            float: right;
+            text-align: center;
+            font-size: 30px;
+            background-color: green;
+            border-radius: 5px;
+        }
+        .a3{
+            height: 40px;
+            width: 130px;
+            outline: 1px solid;
+            margin: 0.1%;
+            float: left;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 30px;
+            background-color: green;
+        }
+        .a4{
+            height: 40px;
+            width: 110px;
+            outline: 1px solid;
+            margin: 0.1%;
+            float: right;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 30px;
+            background-color: green;
+        }
+        button{
+            height: 40px;
+            width: 110px;
+            border: 0cap;
+            color: beige;
+            text-align: center;
+            font-size: 30px;
+            background-color: green;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+   <div class="a">
+    <div class="a1"></div>
+    <div class="a2"><button>C</button></div>
+    <div class="a3"><button onclick="fun(b=1)">1</button></div>
+    <div class="a3"><button onclick="fun(b=2)">2</button></div>
+    <div class="a3"><button onclick="fun(b=3)">3</button></div>
+    <div class="a4"><button>/</button></div>
+    <div class="a3"><button onclick="fun(b=4)">4</button></div>
+    <div class="a3"><button>5</button></div>
+    <div class="a3"><button>6</button></div>
+    <div class="a4"><button>*</button></div>
+    <div class="a3"><button>7</button></div>
+    <div class="a3"><button>8</button></div>
+    <div class="a3"><button>9</button></div>
+    <div class="a4"><button>-</button></div>
+    <div class="a3"><button>0</button></div>
+    <div class="a3"><button>.</button></div>
+    <div class="a3"><button>=</button></div>
+    <div class="a4"><button>+</button></div>
+   </div>
+   <script>
+       function fun(c){
+        p1=document.getElementsByClassName('a1')
+       a=document.createElement('span');
+       a.innerHTML=c;
+       console.log(a);
+       p1.appendChild(a)
+       }
+       
+   </script>
+</body>
+</html>

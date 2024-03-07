@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+    <h1>Hello JavaScript!</h1>
+<img id="myImage" src="bluboff2.png" width="100" height="180"><br><br>
+<button onclick="changeImage()">Bulb ON/OFF</button>
+</center>
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("blubon2")) {
+    image.src = "bluboff2.png";
+  } else {
+    image.src = "blubon2.png";
+  }
+}
+</script>
+
+</body>
+</html>
