@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Boostrap/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <style>
+        .d1{
+            height: 300px;
+            width: 400px;
+            border: 5px solid;
+            margin-top: 10%;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="d1">
+        <h1 style="color: red;text-align: center;">Guess the number</h1><br>
+        <h5 style="text-align: center;">Guess the number b/w 1 to 9</h5><br>
+        <center>
+        <input type="number" id="enter">
+        <span><button onclick="guess()">submit</button></span>
+        <p id="pp"></p>
+        <!-- <div class="alert alert-warning alert-dismissible fade show">
+            <strong>Warning!</strong> There was a problem with your network connection.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div> -->
+    </center>
+    </div>
+</center>
+    <script>
+         let random=Math.floor(Math.random()*11);
+            console.log(random);
+        function guess(){
+            let inp=document.getElementById("enter").value;
+            if(inp==random){
+                 document.getElementById('pp').innerHTML="Congrats"
+                 document.getElementById('pp').style.color="green"
+            }
+            else{
+                // document.getElementById('pp').innerHTML="try again"
+                // document.getElementById('pp').style.color="red"
+                var c=document.createElement("div");
+                c.setAttribute("class","alert-warning alert-dismissible fade show");
+                c.innerHTML=" <strong>Warning!</strong> There was a problem with your network connection.";
+                document.getElementById("d1").appendChild(c);
+            }
+        }
+    </script>
+</body>
+</html>

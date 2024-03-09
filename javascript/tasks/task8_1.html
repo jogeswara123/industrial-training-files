@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 20px;
+            width: 20px;
+             border: 1px solid; 
+            border-radius: 20px;
+             display: inline-block;
+            margin: 10px; 
+            margin-left: 10px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <img src="insta.jpg" id="ss"><br>
+    <div></div>
+    <div></div>
+    <div></div>
+</center>
+    <script>
+        var a=document.getElementsByTagName('div');
+        a[0].style.backgroundColor="black"
+        function fun(){
+            var image= document.getElementById("ss");
+            if (image.src.match("insta")) {
+    image.src = "linkdin.jpg";
+    a[1].style.backgroundColor="black"
+    a[0].style.backgroundColor="lightgrey"
+    a[2].style.backgroundColor="lightgrey"
+  } 
+  else if(image.src.match('linkdin')){
+    image.src="whatsapp.jpg";
+    a[2].style.backgroundColor="black"
+    a[0].style.backgroundColor="lightgrey"
+    a[1].style.backgroundColor="lightgrey"
+  }
+  else {
+    image.src = "insta.jpg";
+    a[0].style.backgroundColor="black"
+    a[1].style.backgroundColor="lightgrey"
+    a[2].style.backgroundColor="lightgrey"
+  }
+        }
+        setInterval(fun,2000);
+    </script>
+</body>
+</html>
