@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <style>
+        div{
+            height: 50px;
+            width: 50px;
+            border: 1px solid;
+            font-size: 34px;
+            margin-top: 10px;
+            text-align: center;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div> </div>
+    <div></div>
+    <script>
+        function clock(){
+            var a=new Date();
+            var h=a.getHours();
+            var m=a.getMinutes();
+            var s=a.getSeconds();
+            var b=document.querySelectorAll('div');
+            b[0].innerHTML=h;
+            b[1].innerHTML=m;
+            b[2].innerHTML=s;
+        }
+        setInterval(clock,1000);
+    </script>
+</body>
+</html>

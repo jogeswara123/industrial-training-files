@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <h1>
+        Form Validation
+    </h1>
+    <form id="myform">
+    Name(8-50 characters):<br>
+    <input type="text" id="fname" onkeyup="names()"><br>
+    <p id="n_p"></p>
+    Email:<br>
+    <input type="email" id="femail" onkeyup="email()" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br>
+    <p id="e_p"></p>
+    Phone Number(10 digits):<br>
+    <input type="number" id="fnum" onkeyup="Number()" maxlength="10"><br>
+    <p id="num_p"></p>
+    <button onclick="fun()">Submit</button>
+</form>
+</div>
+    <script>
+     function names(){
+        var a=document.getElementById('fname').value;
+       if(a.length<8){
+        document.getElementById('n_p').innerHTML="name required 8 characters"
+        document.getElementById('n_p').style.color="red"
+       }
+       else{
+        document.getElementById('n_p').innerHTML=" ";
+       }
+     }
+     function Number(){
+        var b=document.getElementById('fnum').value;
+        if(b.length<10){
+            document.getElementById("num_p").innerHTML="Please enter valid phone number";
+            document.getElementById("num_p").style.color="red"
+        }
+        else{
+            document.getElementById("num_p").innerHTML=" ";
+        }
+     }
+     function email(){
+        var c=document.getElementById('email').value;
+        var d="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+       if(c.match(d))
+       {
+        document.getElementById('e_p')="";
+       }
+       else{
+        document.getElementById('e_p').innerHTML="invalid email format"
+       }
+     }
+    function fun(){
+        document.getElementById('myform').reset();
+    }
+    </script>
+</body>
+</html>

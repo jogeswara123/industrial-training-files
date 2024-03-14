@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analog Clock with Numbers</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+    }
+    .clock {
+        width: 200px;
+        height: 200px;
+        border: 10px solid #333;
+        border-radius: 50%;
+        position: relative;
+    }
+    .hour, .minute, .second {
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        background-color: #333;
+        top: 50%;
+        transform-origin: 100%;
+        transition: all 0.5s ease-in-out;
+    }
+    .hour {
+        transform: rotate(90deg);
+    }
+    .minute {
+        transform: rotate(180deg);
+    }
+    .second {
+        background-color: red;
+        transform-origin: 100%;
+        transform: rotate(270deg);
+    }
+    .number {
+        position: absolute;
+        font-size: 12px;
+        color: #333;
+    }
+</style>
+</head>
+<body>
+    <div class="clock">
+        <div class="hour" id="hour"></div>
+        <div class="minute" id="minute"></div>
+        <div class="second" id="second"></div>
+        <!-- Numbers -->
+        <div class="number" style="transform: rotate(30deg); top: 10px; left: 95px;">1</div>
+        <div class="number" style="transform: rotate(60deg); top: 25px; left: 160px;">2</div>
+        <div class="number" style="transform: rotate(90deg); top: 95px; left: 185px;">3</div>
+        <div class="number" style="transform: rotate(120deg); top: 160px; left: 160px;">4</div>
+        <div class="number" style="transform: rotate(150deg); top: 185px; left: 95px;">5</div>
+        <div class="number" style="transform: rotate(180deg); top: 195px; left: 10px;">6</div>
+        <div class="number" style="transform: rotate(210deg); top: 185px; right: 95px;">7</div>
+        <div class="number" style="transform: rotate(240deg); top: 160px; right: 160px;">8</div>
+        <div class="number" style="transform: rotate(270deg); top: 95px; right: 185px;">9</div>
+        <div class="number" style="transform: rotate(300deg); top: 25px; right: 160px;">10</div>
+        <div class="number" style="transform: rotate(330deg); top: 10px; right: 95px;">11</div>
+        <div class="number" style="transform: rotate(360deg); top: 10px; left: 95px;">12</div>
+    </div>
+
+    <script>
+        function setTime() {
+            const now = new Date();
+            const hour = now.getHours() % 12;
+            const minute = now.getMinutes();
+            const second = now.getSeconds();
+
+            const hourDegree = (hour * 30) + (0.5 * minute);
+            const minuteDegree = (minute * 6) + (0.1 * second);
+            const secondDegree = second * 6;
+
+            document.getElementById('hour').style.transform = `rotate(${hourDegree}deg)`;
+            document.getElementById('minute').style.transform = `rotate(${minuteDegree}deg)`;
+            document.getElementById('second').style.transform = `rotate(${secondDegree}deg)`;
+        }
+
+        setTime();
+        setInterval(setTime, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* Restoring browser effects */        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* All of the same styling to the body */        
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            background-image: linear-gradient(
+                70deg, black);
+        }
+        
+        /* Sizing, positioning of main dial of the clock */        
+        .clock {
+            width: 40vw;
+            height: 40vw;
+            background-image: linear-gradient(
+                70deg, white, white);
+            background-size: cover;
+            box-shadow: 0 3em 5.8em;
+            border-radius: 50%;
+            position: relative;
+        }
+        
+        .hr,
+        .min,
+        .sec {
+            width: 1%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -100%);
+            transform-origin: bottom;
+            z-index: 2;
+            border-radius: 2em;
+        }
+        
+        .pin {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 1em;
+            height: 1em;
+            background: rgb(38, 0, 255);
+            border: 2px solid #ffffff;
+            border-radius: 10em;
+            margin: auto;
+            z-index: 10;
+        }
+        
+        /* Different length of different hands of clock */        
+        .hr {
+            height: 23%;
+            background-color:#090808;
+        }
+        
+        .min {
+            height: 33%;
+            background-color: #110102;
+        }
+        
+        .sec {
+            height: 40%;
+            background-color: #0a0b08;
+            transform-origin: 50% 85%;
+        }
+        .number {
+        position: absolute;
+        font-size: 12px;
+        color: #333;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="clock">
+        <div class="hr"></div>
+        <div class="min"></div>
+        <div class="sec"></div>
+        <div class="pin"></div>
+        <div class="number" style=" top: 50px; left: 480px; font-size: 50px; color: blue;">1</div>
+        <div class="number" style=" top: 90px; left: 390px; font-size: 50px; color: blue;">2</div>
+        <div class="number" style=" top: 185px; left: 420px; font-size: 50px; color: blue;">3</div>
+        <div class="number" style=" top: 290px; left: 390px; font-size: 50px; color: blue;">4</div>
+        <div class="number" style=" top: 370px; left: 320px; font-size: 50px; color: blue;">5</div>
+        <div class="number" style=" top: 400px; left: 215px; font-size: 50px; color: blue;">6</div>
+        <div class="number" style=" top: 370px; right: 315px; font-size: 50px; color: blue;">7</div>
+        <div class="number" style=" top: 290px; right: 395px; font-size: 50px; color: blue;">8</div>
+        <div class="number" style=" top: 185px; right: 420px; font-size: 50px; color: blue;">9</div>
+        <div class="number" style=" top: 90px; right: 370px; font-size: 50px; color: blue;">10</div>
+        <div class="number" style=" top: 18px; right: 295px; font-size: 50px; color: blue;">11</div>
+        <div class="number" style=" top: 0px; right: 200px; font-size: 50px; color: blue;">12</div>
+
+    </div>
+    <script>
+        // Selecting all of the css classes 
+        // on which we want to apply functionalities
+        const hr = document.querySelector('.hr')
+        const min = document.querySelector('.min')
+        const sec = document.querySelector('.sec')
+        
+        // Setting up the period of working
+        setInterval(() => {
+        
+            // Extracting the current time 
+            // from DATE() function
+            let day = new Date()
+            let hour = day.getHours()
+            let minutes = day.getMinutes()
+            let seconds = day.getSeconds()
+        
+            // Formula that is explained above for 
+            // the rotation of different hands
+            let hrrotation = (30 * hour) + (0.5 * minutes);
+            let minrotation = 6 * minutes;
+            let secrotation = 6 * seconds;
+        
+            hr.style.transform =
+                `translate(-50%,-100%) rotate(${hrrotation}deg)`
+            min.style.transform =
+                `translate(-50%,-100%) rotate(${minrotation}deg)`
+            sec.style.transform =
+                `translate(-50%,-85%) rotate(${secrotation}deg)`
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Validation Example</title>
+<style>
+    .error {
+        color: red;
+    }
+    div{
+        height: 500px;
+        width: 300px;
+        border: 1px solid black;
+    }
+
+</style>
+</head>
+<body>
+    <div>
+    <h2>Registration Form</h2>
+    <form id="registrationForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <span id="nameError" class="error"></span><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <span id="emailError" class="error"></span><br>
+        Phone Number(10 digits):<br>
+        <input type="number" id="fnum" onkeyup="Number()" maxlength="10"><br>
+        <p id="num_p"></p>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <span id="passwordError" class="error"></span><br>
+        
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br>
+        <span id="genderError" class="error"></span><br>
+        
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+            <option value="">Select</option>
+            <option value="india">INDIA</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <option value="other">Other</option>
+        </select><br>
+        <span id="countryError" class="error"></span><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</div>
+    <script>
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var gender = document.querySelector('input[name="gender"]:checked');
+            var country = document.getElementById('country').value;
+            var terms = document.getElementById('terms').checked;
+            var nameError = document.getElementById('nameError');
+            var emailError = document.getElementById('emailError');
+            var passwordError = document.getElementById('passwordError');
+            var genderError = document.getElementById('genderError');
+            var countryError = document.getElementById('countryError');
+            var termsError = document.getElementById('termsError');
+            var isValid = true;
+
+            nameError.textContent = "";
+            emailError.textContent = "";
+            passwordError.textContent = "";
+            genderError.textContent = "";
+            countryError.textContent = "";
+            termsError.textContent = "";
+
+            if (name === "") {
+                nameError.textContent = "Name is required";
+                isValid = false;
+            }
+
+            if (email === "") {
+                emailError.textContent = "Email is required";
+                isValid = false;
+            } else if (!/\S+@\S+\.\S+/.test(email)) {
+                emailError.textContent = "Invalid email address";
+                isValid = false;
+            }
+
+            if (password === "") {
+                passwordError.textContent = "Password is required";
+                isValid = false;
+            } else if (password.length < 8) {
+                passwordError.textContent = "Password must be at least 8 characters long";
+                isValid = false;
+            } else if (!/[A-Z]/.test(password)) {
+                passwordError.textContent = "Password must contain at least one uppercase letter";
+                isValid = false;
+            } else if (!/[a-z]/.test(password)) {
+                passwordError.textContent = "Password must contain at least one lowercase letter";
+                isValid = false;
+            } else if (!/\d/.test(password)) {
+                passwordError.textContent = "Password must contain at least one digit";
+                isValid = false;
+            }
+
+            if (!gender) {
+                genderError.textContent = "Gender is required";
+                isValid = false;
+            }
+
+            if (country === "") {
+                countryError.textContent = "Country is required";
+                isValid = false;
+            }
+
+            if (!terms) {
+                termsError.textContent = "You must agree to the terms and conditions";
+                isValid = false;
+            }
+
+            return isValid;
+        }
+        function Number(){
+        var b=document.getElementById('fnum').value;
+        if(b.length<10){
+            document.getElementById("num_p").innerHTML="Please enter valid phone number";
+            document.getElementById("num_p").style.color="red"
+        }
+        else{
+            document.getElementById("num_p").innerHTML=" ";
+        }
+     }
+    </script>
+</body>
+</html>
+
